@@ -15,7 +15,7 @@ function Form() {
 
   React.useEffect(() => {
     if (file)
-      if (file.size < 150000 && file.type == "text/csv") {
+      if (file.size < 1500000 && file.type == "text/csv") {
         setValidacao({
           message: "Arquivo válido ✅",
           style: { color: "#2ecc71" },
@@ -30,8 +30,14 @@ function Form() {
 
   React.useEffect(() => {
     if (responseFile) {
-      setDownload(`http://localhost:3333/download/${responseFile}`);
+      setDownload(
+        `https://csv-to-json-server.onrender.com/download/${responseFile}`
+      );
       setDownloadCount((old) => old + 1);
+      setValidacao({
+        message: "Obrigado por usar o CsvToJson 🚀",
+        style: { color: "#2ecc71" },
+      });
     }
   }, [responseFile]);
 
@@ -41,22 +47,14 @@ function Form() {
     const data = new FormData();
     data.append("file", file);
 
-    const headers = {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    };
-
     if (file.size < 1500000 && file.type == "text/csv") {
       setValidacao({ message: "carregando... ⏳", style: { color: "#333" } });
       await axiosAPI
-        .post("/upload", data, headers)
+        .post("/upload", data, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
         .then((res) => {
           setResponseFile(res.data.file);
-          setValidacao({
-            message: "Download concluido ✅",
-            style: { color: "#2ecc71" },
-          });
         })
         .catch(() => {
           setValidacao({

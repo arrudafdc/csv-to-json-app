@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosAPI = axios.create({
-  baseURL: "http://localhost:3333/",
+  baseURL: "https://csv-to-json-server.onrender.com/",
 });
 
 export default axiosAPI;
