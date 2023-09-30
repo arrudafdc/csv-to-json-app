@@ -29,7 +29,7 @@ Após a execução dos comandos basta ir no arquivo ./src/services/config.jsx e 
 
 ```bash
 # clonar repositório
-git clone https://github.com/arrudafdc/csv-to-json.git
+git clone https://github.com/arrudafdc/csv-to-json-app.git
 
 # entrar na pasta do projeto csv-to-json-app
 cd csv-to-json-app
