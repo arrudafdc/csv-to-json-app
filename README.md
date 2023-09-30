@@ -1,6 +1,6 @@
 # csv-to-json
 
-Para utilizar basta clicar no link: https://arrudafdc.github.io/csv-to-json/
+Para utilizar basta clicar no link: https://arrudafdc.github.io/csv-to-json-app/
 
 ## Sobre o projeto
 
@@ -13,6 +13,10 @@ Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de f
 - Leitura, escrita e transformação de arquivos sob demanda utilizando a API nativa de Strams do Node.
 - Transformação de arquivo CSV para Object sem framework, apenas com lógica de programação, tentando abranger mais de um padrão de escrita CSV, como separadores que usam vírgulas, pontos e vírgulas, headers com aspas, headers sem aspas...
 
+## Observações
+
+- Por ter hospedado o backend no Render, que é um serviço gratuíto e limitado, precisei deixar o tamanho máximo do arquivo para 1MB.
+
 ## Como usar (Modo de Desenvolvimento)
 
 Para executar esse projeto, você precisará do servidor em execução local. Você pode encontrar o servidor e todas as instruções para iniciá-lo [aqui](https://github.com/arrudafdc/csv-to-json-server)
@@ -23,8 +27,8 @@ Após a execução dos comandos basta ir no arquivo ./src/services/config.jsx e 
 # clonar repositório
 git clone https://github.com/arrudafdc/csv-to-json.git
 
-# entrar na pasta do projeto csv-to-json
-cd csv-to-json
+# entrar na pasta do projeto csv-to-json-app
+cd csv-to-json-app
 
 # baixar as dependências
 npm install
