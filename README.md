@@ -8,18 +8,18 @@ Esse é o front-end do: https://github.com/arrudafdc/csv-to-json-server
 
 ## Sobre o projeto
 
-CsvToJson é uma aplicação full stack construída com NodeJS, Typescript e Express (backend) e React + Axios (frontend) que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
+CsvToJson é uma aplicação full stack construída com NodeJS, Typescript e Express (backend) + React e Axios (frontend) que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
 
 Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
 
 ## Principais Funcionalidades
 
 - Leitura, escrita e transformação de arquivos sob demanda utilizando a API nativa de Strams do Node.
-- Transformação de arquivo CSV para Object sem framework, apenas com lógica de programação, tentando abranger mais de um padrão de escrita CSV, como separadores que usam vírgulas, pontos e vírgulas, headers com aspas, headers sem aspas...
+- Transformar CSV para Object sem framework, apenas com lógica de programação, tentando abranger mais de um padrão de escrita CSV
 
 ## Observações
 
-- Por ter hospedado o backend no Render, que é um serviço gratuíto e limitado, precisei deixar o tamanho máximo do arquivo para 1MB.
+- Por ter hospedado o backend no Render, que é um serviço gratuíto e limitado, precisei limitar o tamanho máximo do arquivo para 1MB.
 
 ## Como Usar (Modo de Desenvolvimento)
 
