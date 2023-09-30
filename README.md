@@ -4,6 +4,8 @@
 
 Para utilizar basta clicar no link: https://arrudafdc.github.io/csv-to-json-app/
 
+Esse é o front-end do: https://github.com/arrudafdc/csv-to-json-server
+
 ## Sobre o projeto
 
 CsvToJson é uma aplicação full stack construída com NodeJS, Typescript e Express (backend) e React + Axios (frontend) que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
