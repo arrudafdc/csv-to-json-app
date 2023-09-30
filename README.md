@@ -1,5 +1,7 @@
 # csv-to-json
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/arrudafdc/csv-to-json-app/blob/main/LICENSE) 
+
 Para utilizar basta clicar no link: https://arrudafdc.github.io/csv-to-json-app/
 
 ## Sobre o projeto
