@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-## Construído com
+## Construído Com
 
 ### Back-end
 
