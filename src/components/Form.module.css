@@ -1,0 +1,47 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 450px;
+  margin: 2rem;
+  background: #fff;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.submitContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submitContainer button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  background: #7159c1;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitContainer button:hover {
+  background: #413178;
+}
+
+@media (max-width: 480px) {
+  .submitContainer {
+    display: block;
+  }
+  .submitContainer button {
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-top: 16px;
+  }
+}

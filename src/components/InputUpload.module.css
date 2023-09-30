@@ -1,0 +1,14 @@
+.fileInput {
+  display: none;
+}
+
+.fileLabel {
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: height 0.2s ease;
+  display: block;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #333;
+}

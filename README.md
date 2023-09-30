@@ -1,8 +1,53 @@
-# React + Vite
+# csv-to-json
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para utilizar basta clicar no link: https://arrudafdc.github.io/csv-to-json/
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CsvToJson é uma aplicação full stack que recebe um arquivo CSV, transforma para JSON e disponibiliza o mesmo para download.
+
+Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
+
+## Funcionalidades
+
+- Leitura, escrita e transformação de arquivos sob demanda utilizando a API nativa de Strams do Node.
+- Transformação de arquivo CSV para Object sem framework, apenas com lógica de programação, tentando abranger mais de um padrão de escrita CSV, como separadores que usam vírgulas, pontos e vírgulas, headers com aspas, headers sem aspas...
+
+## Como usar (Modo de Desenvolvimento)
+
+Para executar esse projeto, você precisará do servidor em execução local. Você pode encontrar o servidor e todas as instruções para iniciá-lo [aqui](https://github.com/arrudafdc/csv-to-json-server)
+
+Após a execução dos comandos basta ir no arquivo ./src/services/config.jsx e alterar o baseURL para "http://localhost:3333/"
+
+```bash
+# clonar repositório
+git clone https://github.com/arrudafdc/csv-to-json.git
+
+# entrar na pasta do projeto csv-to-json
+cd csv-to-json
+
+# baixar as dependências
+npm install
+
+# executar o projeto em modo de desenvolvimento
+npm run dev
+```
+
+## Construído com
+
+### Back-end
+
+- Typescript
+- NodeJS
+- Express
+- Multer
+- Cors
+
+### Front-end
+
+- React
+- Axios
+
+## Autor
+
+Lucas Arruda
