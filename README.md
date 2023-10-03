@@ -12,14 +12,15 @@ CsvToJson é uma aplicação full stack construída com NodeJS, Typescript e Exp
 
 Apesar de simples, a ideia era criar algo eficiente e funcional que pudesse de fato processar grandes arquivos sob demanda de forma rápida e com um consumo eficiente de memória utilizando a API de Streams.
 
+## Observações
+
+- Por ter hospedado o backend no Render, que é um serviço gratuíto, precisei limitar o tamanho máximo do arquivo para 1MB.
+- Quando o Render fica muito tempo ser nenhuma requisição, o servidor fica muito lento, recomenda-se então apenas abrir o link: https://csv-to-json-server.onrender.com/ e depois enviar o CSV normalmente
+
 ## Principais Funcionalidades
 
 - Leitura, escrita e transformação de arquivos sob demanda utilizando a API nativa de Strams do Node.
 - Transformar CSV para Object sem framework, apenas com lógica de programação, tentando abranger mais de um padrão de escrita CSV
-
-## Observações
-
-- Por ter hospedado o backend no Render, que é um serviço gratuíto e limitado, precisei limitar o tamanho máximo do arquivo para 1MB.
 
 ## Como Usar (Modo de Desenvolvimento)
 
