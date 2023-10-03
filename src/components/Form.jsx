@@ -4,6 +4,7 @@ import InputUpload from "./InputUpload";
 import axiosAPI from "../services/config";
 import IframeDownload from "./IframeDownload";
 import Validacao from "./Validacao";
+import ServerMessage from "./ServerMessage";
 
 function Form() {
   const [file, setFile] = React.useState("");
@@ -68,6 +69,7 @@ function Form() {
   return (
     <div className={styles.container}>
       <form onSubmit={uploadFile} className={styles.form}>
+        <ServerMessage />
         <InputUpload setValue={setFile} value={file} button={btnSubmit} />
         <div className={styles.submitContainer}>
           <Validacao validacao={validacao} />
